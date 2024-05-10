@@ -257,15 +257,15 @@ knitr::include_graphics("empleo.png")
 
 
 # Instalar paquetes en caso que no esten ya instalados
-# if (!require(tidyverse) && !require(utils) && !require(purrr) && !require(kableExtra) && !require(DT) && !require(stringr)) {
-#   install.packages(c("tidyverse", "utils", "purrr", "kableExtra", "DT", "stringr"))
-# }
-# 
-# 
-# # Cargar los paquetes necesarios
-# 
-# packages <- c("tidyverse", "utils", "purrr", "kableExtra", "DT", "stringr")
-# loaded_packages <- lapply(packages, library, character.only = TRUE)
+if (!require(tidyverse) && !require(utils) && !require(purrr) && !require(kableExtra) && !require(DT) && !require(stringr)) {
+  install.packages(c("tidyverse", "utils", "purrr", "kableExtra", "DT", "stringr"))
+}
+
+
+# Cargar los paquetes necesarios
+
+packages <- c("tidyverse", "utils", "purrr", "kableExtra", "DT", "stringr")
+loaded_packages <- lapply(packages, library, character.only = TRUE)
 
 
 
